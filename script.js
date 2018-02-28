@@ -1,1 +1,19 @@
-console.log("Hello, its me!!")
+$(function() {
+    // your jQuery code here...
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+});

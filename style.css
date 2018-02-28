@@ -359,7 +359,8 @@ input[type= "text"] {
 input[type= "submit"] {
     height: 2.5rem;
     width: 6rem;
-    position: absolute;
+    position: relative;
+    right: 5px;
     background-color: #e2574c;
     border: .1px solid #e2574c;
     color: white;
@@ -465,7 +466,7 @@ input:focus {
     font-family: "Playfair Display", serif;
     font-style: italic;
     align-self: center;
-    margin-bottom: 1rem;
+    margin-bottom: 4rem;
 }
 
 .products-heading em {
@@ -473,6 +474,29 @@ input:focus {
     font-size: 2rem;
     font-weight: bold;
     font-style: normal;
+}
+
+.products-list {
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+
+.products img {
+    height: 320px;
+}
+
+.products p {
+    color: #e2574c;
+    font-size: 22px;
+    font-family: "Playfair Display";
+}
+
+.products h6 {
+    color: #969696;
+    font-size: 14px;
+    margin: 15px;
+    font-family: "Raleway";
 }
 
 @media all and (min-width: 600px) {

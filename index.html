@@ -7,9 +7,10 @@
     <title>Aloha Apparel Co.</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="flickity.min.css">
+    <link rel="stylesheet" href="jsfiles/flickity.min.css">
     <script src="jsfiles/jquery-3.3.1.min.js"></script>
     <script src="jsfiles/flickity.pkgd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.compatibility.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway:400,400i,700" rel="stylesheet">
   </head>
@@ -58,16 +59,27 @@
     </section>
      <section class="products container">    
       <h2 class="products-heading">Most-Loved <em>Products</em></h2>
-      <ul class="products-list">
-        <li><img src="images/stretch-knit-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Stretch Knit Dress</p><h6>$169.00</h6></li>
-        <li><img src="images/cotton-blue-shirt.jpg" /><h6>Shirts</h6><p class="prod-name">Cotton Blue Shirt</p><h6>$89.00</h6></li>
-        <li><img src="images/checked-stretch-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Checked Stretch Dress</p><h6>$129.00</h6></li>
-        <li><img src="images/blue-hipster-backpack.jpg" /><h6>Bags</h6><p class="prod-name">Blue Hipster Backpack</p><h6>$69.00</h6></li>
-        <li><img src="images/pink-dotted-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Pink Dotted Dress</p><h6>$99.00</h6></li>
-        <li><img src="images/blue-silk-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Blue Silk Dress</p><h6>$169.00</h6></li>
-        <li><img src="images/demin-overall-shorts.jpg" /><h6>Denim</h6><p class="prod-name">Demin Overall Shorts</p><h6>$89.00</h6></li>
-        <li><img src="images/cotton-yellow-tshirt.jpg" /><h6>Shirts</h6><p class="prod-name">Cotton Yellow Shirt</p><h6>$89.00</h6></li>
-      </ul>
+      <div class="carousel" data-flickity='{ "groupCells": true }'>
+         <!-- <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div>
+          <div class="carousel-cell"></div> -->
+        <div><img src="images/stretch-knit-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Stretch Knit Dress</p><h6>$169.00</h6></div>
+        <div><img src="images/cotton-blue-shirt.jpg" /><h6>Shirts</h6><p class="prod-name">Cotton Blue Shirt</p><h6>$89.00</h6></div>
+        <div><img src="images/checked-stretch-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Checked Stretch Dress</p><h6>$129.00</h6></div>
+        <div><img src="images/blue-hipster-backpack.jpg" /><h6>Bags</h6><p class="prod-name">Blue Hipster Backpack</p><h6>$69.00</h6></div>
+        <div><img src="images/pink-dotted-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Pink Dotted Dress</p><h6>$99.00</h6></div>
+        <div><img src="images/blue-silk-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Blue Silk Dress</p><h6>$169.00</h6></div>
+        <div><img src="images/demin-overall-shorts.jpg" /><h6>Denim</h6><p class="prod-name">Demin Overall Shorts</p><h6>$89.00</h6></div>
+        <div><img src="images/cotton-yellow-tshirt.jpg" /><h6>Shirts</h6><p class="prod-name">Cotton Yellow Shirt</p><h6>$89.00</h6></div> 
+        </div>
     </section>
     <section class="sign-up container">
       <p class="sign-up-title">Sign up for <em>Updates</em></p><br><br>
@@ -93,7 +105,6 @@
          <li><a href="" /><span class="fa fa-google-plus">&nbsp;  <em> Google +</em></span></a></li>
         </ul>
     </footer>
-    <script type="text/javascript" src="js/webwidget_slideshow_dot.js"></script>
     <script src="script.js"></script>  
   </body>
-</html>
+</html

@@ -460,12 +460,12 @@ input:focus {
     counter-increment: carousel-cell;
   }
   
-  .carousel-cell.is-selected {
+.carousel-cell.is-selected {
     background: #ED2;
   }
   
   /* cell number */
-  .carousel-cell:before {
+.carousel-cell:before {
     display: block;
     text-align: center;
     content: counter(carousel-cell);
@@ -480,7 +480,8 @@ input:focus {
 
     /* FOOTER */
 
-footer {display: flex;
+footer {
+    display: flex;
     flex-direction: row;
     justify-content: space-between;
     height: 320px;

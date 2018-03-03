@@ -2,7 +2,7 @@
 
 # Description
 
-This a page for a Fashion Retail Online Store. 
+This a page for a Fashion Retail Online Store. Using HTML, CSS and jQuery.
 
 
 ## Author

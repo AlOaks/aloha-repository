@@ -35,13 +35,33 @@ body {
     flex-grow: 0;   
 }
 
-.cart-logo {
-    width: 100px;
-    height: 60px;
+.cart {
     order: 3;
     align-self: flex-start;
-    padding-top: 10px;
     flex-grow: 0;
+}
+
+.cart-logo {
+    height: 60px;
+    padding-top: 10px;
+    padding-right: 20px;
+}
+
+.cartNumber {
+    position: absolute;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background-color: red;
+    border-radius: 36px;
+    width: 18px;
+    font-size: 14px;
+    font-weight: bold;
+    height: 18px;
+    text-align: center;
+    vertical-align: center;
+    color: white;
+    font-family: "Raleway";
 }
 
 .nav-bar {
@@ -59,6 +79,7 @@ body {
     padding-top: 1rem;
 }
 
+
 /* Nav Bar Contents */
 
 .nav-bar a {color: #e2574c;
@@ -75,14 +96,6 @@ body {
     padding-left: 0;
 }
 
-.shop {
-}
-
-.featured {
-}
-
-.updates {
-}
 
 /* Hero Image */
 
@@ -307,7 +320,7 @@ input[type= "text"] {
     align-self: center;
 }
 
-input[type= "submit"] {
+input[type= "button"] {
     height: 2.5rem;
     width: 6rem;
     position: relative;

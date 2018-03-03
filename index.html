@@ -18,7 +18,8 @@
     <header class="header">
       <!-- <h1>Aloha Apparel Co.</h1> -->
       <img class="aloha-logo" src="images/aloha-logo.svg" alt="aloha logo" />
-      <img class="cart-logo" src="images/cart-icon.svg" alt="cart logo" />
+      <!-- <img class="cart-logo" src="images/cart-icon.svg" alt="cart logo" /> -->
+      <div class="cart"><img class="cart-logo" src="images/cart-icon.svg" alt="cart logo" /><div class="cartNumber">0</div></div>
     </header>
       <nav class="nav-bar">
           <a class="about" href="">About</a>
@@ -71,23 +72,23 @@
           <div class="carousel-cell"></div>
           <div class="carousel-cell"></div>
           <div class="carousel-cell"></div> -->
-        <div><img src="images/stretch-knit-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Stretch Knit Dress</p><h6>$169.00</h6></div>
-        <div><img src="images/cotton-blue-shirt.jpg" /><h6>Shirts</h6><p class="prod-name">Cotton Blue Shirt</p><h6>$89.00</h6></div>
-        <div><img src="images/checked-stretch-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Checked Stretch Dress</p><h6>$129.00</h6></div>
-        <div><img src="images/blue-hipster-backpack.jpg" /><h6>Bags</h6><p class="prod-name">Blue Hipster Backpack</p><h6>$69.00</h6></div>
-        <div><img src="images/pink-dotted-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Pink Dotted Dress</p><h6>$99.00</h6></div>
-        <div><img src="images/blue-silk-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Blue Silk Dress</p><h6>$169.00</h6></div>
-        <div><img src="images/demin-overall-shorts.jpg" /><h6>Denim</h6><p class="prod-name">Demin Overall Shorts</p><h6>$89.00</h6></div>
-        <div><img src="images/cotton-yellow-tshirt.jpg" /><h6>Shirts</h6><p class="prod-name">Cotton Yellow Shirt</p><h6>$89.00</h6></div> 
+        <div><img src="images/stretch-knit-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Stretch Knit Dress</p><h6>$169.00</h6><button class="addToCart">Add To Cart</button></div>
+        <div><img src="images/cotton-blue-shirt.jpg" /><h6>Shirts</h6><p class="prod-name">Cotton Blue Shirt</p><h6>$89.00</h6><button class="addToCart">Add To Cart</button></div>
+        <div><img src="images/checked-stretch-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Checked Stretch Dress</p><h6>$129.00</h6><button class="addToCart">Add To Cart</button></div>
+        <div><img src="images/blue-hipster-backpack.jpg" /><h6>Bags</h6><p class="prod-name">Blue Hipster Backpack</p><h6>$69.00</h6><button class="addToCart">Add To Cart</button></div>
+        <div><img src="images/pink-dotted-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Pink Dotted Dress</p><h6>$99.00</h6><button class="addToCart">Add To Cart</button></div>
+        <div><img src="images/blue-silk-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Blue Silk Dress</p><h6>$169.00</h6><button class="addToCart">Add To Cart</button></div>
+        <div><img src="images/demin-overall-shorts.jpg" /><h6>Denim</h6><p class="prod-name">Demin Overall Shorts</p><h6>$89.00</h6><button class="addToCart">Add To Cart</button></div>
+        <div><img src="images/cotton-yellow-tshirt.jpg" /><h6>Shirts</h6><p class="prod-name">Cotton Yellow Shirt</p><h6>$89.00</h6><button class="addToCart">Add To Cart</button></div> 
         </div>
     </section>
     <section class="sign-up container">
       <p class="sign-up-title">Sign up for <em>Updates</em></p><br><br>
       <p class="sign-up-description">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog.
        Unsubscribe at any time.</p>
-      <form action="" method="post">
-        <input type="text" name="e-mail" value="  Your Email" size="12" />
-        <input type="submit" name="submit" value="subscribe" />
+      <form class="form" method="post" enctype="text/plain">
+        <input class="email" type="text" name="e-mail" placeholder="  Your E-mail" size="12" />
+        <input class="button" type="button" name="submit" value="subscribe" />
       </form>    
     </section>      
     <footer>

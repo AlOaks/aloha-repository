@@ -334,6 +334,12 @@ input[type= "button"] {
 
 }    
 
+.button:hover {
+    color: #e2574c;
+    background-color: white;
+    border: 1px solid #e2574c;
+}
+
 input:focus {
     color: black;
     border: 1px solid transparent;
@@ -486,6 +492,24 @@ input:focus {
     font-size: 80px;
     color: white;
   }
+
+.addToCart {
+    color: white;
+    border-radius: 20px;
+    background-color: #e2574c;
+    height: 30px;
+    width: 100px;
+    border: 1px solid transparent;
+    font-family: "Raleway";
+
+}
+
+.addToCart:hover {
+    background-color: white;
+    transition: .5s;
+    border: 1px solid #e2574c;
+    color: #e2574c;
+}
   
 
 @media all and (min-width: 600px) {

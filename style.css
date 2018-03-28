@@ -152,7 +152,7 @@ section.hero-image {
     margin-bottom: 1rem;
 }
 
-.about-title em {
+.about-title b {
     align-self: center;
     font-size: 2rem;
     font-weight: bold;
@@ -198,7 +198,7 @@ footer {
     font-size: .9rem;
 }
 
-.footer-media em {
+.footer-media b {
     font-size: .00001px;
 }
 
@@ -273,7 +273,7 @@ footer {
     align-self: center;
 }
 
-.sign-up-title em {
+.sign-up-title b {
     color: white;
     font-weight: bold;
     font-style: normal;
@@ -439,7 +439,7 @@ input:focus {
     margin-bottom: 4rem;
 }
 
-.products-heading em {
+.products-heading b {
     align-self: center;
     font-size: 2rem;
     font-weight: bold;
@@ -557,7 +557,7 @@ footer {
     max-height:300px;
 
 }
-.footer-media em {
+.footer-media b {
     font-size: 1rem;
     font-family: "raleway", sans-serif;
 }

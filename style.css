@@ -311,7 +311,7 @@ input  {
     border-radius: 60px;  
 }
 
-input[type= "text"] {
+input[type= "email"] {
     width: 24rem;
     height: 3rem;
     color: #969696;

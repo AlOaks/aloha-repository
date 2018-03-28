@@ -19,7 +19,7 @@
       <!-- <h1>Aloha Apparel Co.</h1> -->
       <img class="aloha-logo" src="images/aloha-logo.svg" alt="aloha logo" />
       <!-- <img class="cart-logo" src="images/cart-icon.svg" alt="cart logo" /> -->
-      <div class="cart"><img class="cart-logo" src="images/cart-icon.svg" alt="cart logo" /><div class="cartNumber">0</div></div>
+      <div class="cart"><a href="#"><img class="cart-logo" src="images/cart-icon.svg" alt="Cart" /><div class="cartNumber" aria-label="Number of itens in cart">0</div></a></div>
     </header>
       <nav class="nav-bar">
           <a class="about" href="">About</a>
@@ -34,7 +34,7 @@
     <img class="hero-image" src="../aloha-project/images/flower-bkgd.jpg" alt="flower-bckgd" /> -->
     </section>  
     <section class="about-section container">    
-      <p class="about-title">Hand-Crafted <em>Styles</em></p>
+      <p class="about-title">Hand-Crafted <b>Styles</b></p>
       <p class="about-description">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current
        selection of products or sing-up for updates below</p>
     </section>
@@ -59,7 +59,7 @@
       </div>
     </section>
      <section class="products container">    
-      <h2 class="products-heading">Most-Loved <em>Products</em></h2>
+      <h2 class="products-heading">Most-Loved <b>Products</b></h2>
       <div class="carousel" data-flickity='{ "wrapAround": true }'>
          <!-- <div class="carousel-cell"></div>
           <div class="carousel-cell"></div>
@@ -72,22 +72,24 @@
           <div class="carousel-cell"></div>
           <div class="carousel-cell"></div>
           <div class="carousel-cell"></div> -->
-        <div><img src="images/stretch-knit-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Stretch Knit Dress</p><h6>$169.00</h6><button class="addToCart">Add To Cart</button></div>
-        <div><img src="images/cotton-blue-shirt.jpg" /><h6>Shirts</h6><p class="prod-name">Cotton Blue Shirt</p><h6>$89.00</h6><button class="addToCart">Add To Cart</button></div>
-        <div><img src="images/checked-stretch-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Checked Stretch Dress</p><h6>$129.00</h6><button class="addToCart">Add To Cart</button></div>
-        <div><img src="images/blue-hipster-backpack.jpg" /><h6>Bags</h6><p class="prod-name">Blue Hipster Backpack</p><h6>$69.00</h6><button class="addToCart">Add To Cart</button></div>
-        <div><img src="images/pink-dotted-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Pink Dotted Dress</p><h6>$99.00</h6><button class="addToCart">Add To Cart</button></div>
-        <div><img src="images/blue-silk-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Blue Silk Dress</p><h6>$169.00</h6><button class="addToCart">Add To Cart</button></div>
-        <div><img src="images/demin-overall-shorts.jpg" /><h6>Denim</h6><p class="prod-name">Demin Overall Shorts</p><h6>$89.00</h6><button class="addToCart">Add To Cart</button></div>
-        <div><img src="images/cotton-yellow-tshirt.jpg" /><h6>Shirts</h6><p class="prod-name">Cotton Yellow Shirt</p><h6>$89.00</h6><button class="addToCart">Add To Cart</button></div> 
+        <div><img src="images/stretch-knit-dress.jpg" alt="Stretch Knit Dress" /><h6>Dresses</h6><p class="prod-name">Stretch Knit Dress</p><h6>$169.00</h6><button class="addToCart">Add To Cart</button></div>
+        <div><img src="images/cotton-blue-shirt.jpg" alt="Cotton Blue Shirt" /><h6>Shirts</h6><p class="prod-name">Cotton Blue Shirt</p><h6>$89.00</h6><button class="addToCart">Add To Cart</button></div>
+        <div><img src="images/checked-stretch-dress.jpg" alt="Checked Stretch Dress" /><h6>Dresses</h6><p class="prod-name">Checked Stretch Dress</p><h6>$129.00</h6><button class="addToCart">Add To Cart</button></div>
+        <div><img src="images/blue-hipster-backpack.jpg" alt="Blue Hipster Backpack"/><h6>Bags</h6><p class="prod-name">Blue Hipster Backpack</p><h6>$69.00</h6><button class="addToCart">Add To Cart</button></div>
+        <div><img src="images/pink-dotted-dress.jpg" alt="Pink Dotted Dress"/><h6>Dresses</h6><p class="prod-name">Pink Dotted Dress</p><h6>$99.00</h6><button class="addToCart">Add To Cart</button></div>
+        <div><img src="images/blue-silk-dress.jpg" alt="Blue Silk Dress"/><h6>Dresses</h6><p class="prod-name">Blue Silk Dress</p><h6>$169.00</h6><button class="addToCart">Add To Cart</button></div>
+        <div><img src="images/demin-overall-shorts.jpg" alt="Demin Overall Shorts"/><h6>Denim</h6><p class="prod-name">Demin Overall Shorts</p><h6>$89.00</h6><button class="addToCart">Add To Cart</button></div>
+        <div><img src="images/cotton-yellow-tshirt.jpg" alt="Cotton Yellow Shirt"/><h6>Shirts</h6><p class="prod-name">Cotton Yellow Shirt</p><h6>$89.00</h6><button class="addToCart">Add To Cart</button></div> 
         </div>
     </section>
     <section class="sign-up container">
-      <p class="sign-up-title">Sign up for <em>Updates</em></p><br><br>
+      <p class="sign-up-title">Sign up for <b>Updates</b></p><br><br>
       <p class="sign-up-description">Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog.
        Unsubscribe at any time.</p>
       <form class="form" method="post" enctype="text/plain">
-        <input class="email" type="text" name="e-mail" placeholder="  Your E-mail" size="12" />
+        
+        <label for="emailInput" class="visuallyhidden">Your Email</label>
+        <input id="emailInput" class="email" type="email" name="e-mail" placeholder="  Your E-mail" size="12" />
         <input class="button" type="button" name="submit" value="subscribe" />
       </form>    
     </section>      
@@ -99,13 +101,15 @@
         <p class="footer-address">1490 W Broadway Vancouver, BC, Canada</p>
       </div>
         <ul class="footer-media">
-         <li><a href="" /><span class="fa fa-facebook">&nbsp;  <em> Facebook</em></span></a></li>
-         <li><a href="" /><span class="fa fa-twitter">&nbsp;  <em> Twitter</em></span></a></li>
-         <li><a href="" /><span class="fa fa-instagram">&nbsp;  <em> Instagram</em></span></a></li>
-         <li><a href="" /><span class="fa fa-pinterest">&nbsp;  <em> Pinterest</em></span></a></li>
-         <li><a href="" /><span class="fa fa-google-plus">&nbsp;  <em> Google +</em></span></a></li>
+         <li><a href="#"><span class="fa fa-facebook">&nbsp;  <b>Facebook</b></span></a></li>
+         <li><a href="#"><span class="fa fa-twitter">&nbsp;  <b>Twitter</b></span></a></li>
+         <li><a href="#"><span class="fa fa-instagram">&nbsp;  <b>Instagram</b></span></a></li>
+         <li><a href="#"><span class="fa fa-pinterest">&nbsp;  <b>Pinterest</b></span></a></li>
+         <li><a href="#"><span class="fa fa-google-plus">&nbsp;  <b>Google +</b></span></a></li>
         </ul>
     </footer>
     <script src="script.js"></script>  
+    <!-- <script src="jsfiles/tota11y.min.js"></script> -->
+    
   </body>
-</html
+</html>

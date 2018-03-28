@@ -152,7 +152,7 @@ section.hero-image {
     margin-bottom: 1rem;
 }
 
-.about-title em {
+.about-title b {
     align-self: center;
     font-size: 2rem;
     font-weight: bold;
@@ -198,7 +198,7 @@ footer {
     font-size: .9rem;
 }
 
-.footer-media em {
+.footer-media b {
     font-size: .00001px;
 }
 
@@ -273,7 +273,7 @@ footer {
     align-self: center;
 }
 
-.sign-up-title em {
+.sign-up-title b {
     color: white;
     font-weight: bold;
     font-style: normal;
@@ -311,7 +311,7 @@ input  {
     border-radius: 60px;  
 }
 
-input[type= "text"] {
+input[type= "email"] {
     width: 24rem;
     height: 3rem;
     color: #969696;
@@ -439,7 +439,7 @@ input:focus {
     margin-bottom: 4rem;
 }
 
-.products-heading em {
+.products-heading b {
     align-self: center;
     font-size: 2rem;
     font-weight: bold;
@@ -557,7 +557,7 @@ footer {
     max-height:300px;
 
 }
-.footer-media em {
+.footer-media b {
     font-size: 1rem;
     font-family: "raleway", sans-serif;
 }
@@ -619,4 +619,56 @@ footer {
      border: 2.5px solid white;
      flex-basis: 50%;
 } 
+}
+
+  
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+ .visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    -webkit-clip-path: inset(50%);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap;
+    /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    -webkit-clip-path: none;
+    clip-path: none;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
 }

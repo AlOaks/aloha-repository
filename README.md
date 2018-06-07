@@ -10,7 +10,7 @@ HTML
 CSS
 Javascript
 
-##Learnings
+## Learnings
 
 How to properly use flexbox, styling and functions.
 

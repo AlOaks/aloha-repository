@@ -15,21 +15,24 @@
     <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700|Raleway:400,400i,700" rel="stylesheet">
   </head>
   <body>
+    <a class="screen-reader-text" href="#shop-container">Skip to content</a>
     <header class="header">
       <!-- <h1>Aloha Apparel Co.</h1> -->
       <img class="aloha-logo" src="images/aloha-logo.svg" alt="aloha logo" />
       <!-- <img class="cart-logo" src="images/cart-icon.svg" alt="cart logo" /> -->
       <div class="cart"><img class="cart-logo" src="images/cart-icon.svg" alt="cart logo" /><div class="cartNumber">0</div></div>
     </header>
-      <nav class="nav-bar">
-          <a class="about" href="">About</a>
-          <a class="shop" href="">Shop</a>
-          <a class="featured" href="">Featured</a>
-          <a class="updates" href="">Updates</a>
-      </nav>
+      <ul class="nav-bar">
+          <li class="about"><a href="">About</a></li>
+          <li class="shop"><a href="">Shop</a></li>
+          <li class="featured"><a href="">Featured</a></li>
+          <li class="updates"><a href="">Updates</a></li>
+      </ul>
     <section class="hero-image container">
+      <div class="hero-overlay">
       <p class="banner-title-1">New Collection</p>
       <p class="banner-title-2">Spring/Summer 2018</p>
+      </div>
    <!-- <img class="banner-girl" src="../aloha-project/images/banner-girl.png" alt="banner-girl" /> 
     <img class="hero-image" src="../aloha-project/images/flower-bkgd.jpg" alt="flower-bckgd" /> -->
     </section>  
@@ -38,7 +41,7 @@
       <p class="about-description">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current
        selection of products or sing-up for updates below</p>
     </section>
-    <section class="category container">
+    <section class="category container" id="shop-container" tabindex="-1">
       <div class="mens-img">
        <span class="mens category-item">men's</span>
       </div>
@@ -61,17 +64,6 @@
      <section class="products container">    
       <h2 class="products-heading">Most-Loved <em>Products</em></h2>
       <div class="carousel" data-flickity='{ "wrapAround": true }'>
-         <!-- <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div>
-          <div class="carousel-cell"></div> -->
         <div><img src="images/stretch-knit-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Stretch Knit Dress</p><h6>$169.00</h6><button class="addToCart">Add To Cart</button></div>
         <div><img src="images/cotton-blue-shirt.jpg" /><h6>Shirts</h6><p class="prod-name">Cotton Blue Shirt</p><h6>$89.00</h6><button class="addToCart">Add To Cart</button></div>
         <div><img src="images/checked-stretch-dress.jpg" /><h6>Dresses</h6><p class="prod-name">Checked Stretch Dress</p><h6>$129.00</h6><button class="addToCart">Add To Cart</button></div>
@@ -106,6 +98,7 @@
          <li><a href="" /><span class="fa fa-google-plus">&nbsp;  <em> Google +</em></span></a></li>
         </ul>
     </footer>
+    <script src="tota11y.min.js"></script>
     <script src="script.js"></script>  
   </body>
 </html

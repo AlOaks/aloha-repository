@@ -1,3 +1,25 @@
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+ }
+
+.screen-reader-text:focus {
+    clip: auto !important;
+    display: block;
+    height: auto;
+    left: 5px;
+    top: 5px;
+    width: auto;
+    z-index: 100000; /* above all content */
+ }
+
+ #shop-container[tabindex="-1"]:focus {
+    outline: 0;
+ }
+
 /* CSS from here */
 
 body {
@@ -99,17 +121,28 @@ body {
 
 /* Hero Image */
 
-section.hero-image {
+.hero-overlay {
+    height: 800px;
+    width: 100%;
+    background: rgba(0,0,0,.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -5rem;
+}
+
+.hero-image {
     background: 
     url("images/banner-girl.png") no-repeat center bottom, 
     url("images/flower-bkgd.jpg") no-repeat center center;
-    height: 500px;
+    height: 630px;
     width: 100%;
     padding-top: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-size: 8.5rem, cover;
+    background-size: 12rem, cover;
 }
 
 .banner-title-1 {color: rgb(255, 255, 255);
@@ -154,7 +187,6 @@ section.hero-image {
 
 .about-title em {
     align-self: center;
-    font-size: 2rem;
     font-weight: bold;
     font-style: normal;
 }
@@ -277,7 +309,6 @@ footer {
     color: white;
     font-weight: bold;
     font-style: normal;
-    font-size: 2rem;
     text-shadow: 1px 1px #242424;
 }
 
@@ -428,6 +459,10 @@ input:focus {
     align-items: center;
 }
 
+.category-item:hover {
+    color: rgb(236, 102, 12);
+}
+
 
 /* Most-Loved Products */
 
@@ -441,7 +476,6 @@ input:focus {
 
 .products-heading em {
     align-self: center;
-    font-size: 2rem;
     font-weight: bold;
     font-style: normal;
 }

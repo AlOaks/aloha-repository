@@ -1,4 +1,4 @@
-# Project 1 (Aloha Project)
+Aloha Apparel
 
 # Description
 
@@ -9,10 +9,6 @@ This a page for a Fashion Retail Online Store. Using HTML, CSS and jQuery.
 HTML
 CSS
 Javascript
-
-## Learnings
-
-How to properly use flexbox, styling and functions.
 
 ## Author
 
